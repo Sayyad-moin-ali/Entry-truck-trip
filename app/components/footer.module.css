@@ -1,0 +1,18 @@
+.container {
+    @apply bg-slate-900 text-white w-[100%] h-[300px] flex justify-evenly mt-4 items-center content-center flex-wrap;
+}
+.footerHeading{
+    @apply font-bold text-2xl border-b-2 border-white pb-2;
+}
+.containerWrapper{
+    @apply leading-9;
+}
+.socialMediawrapper{
+    @apply flex gap-5;
+}
+
+@media (max-width: 640px) {
+    .container {
+        @apply flex-col flex justify-center items-start flex-wrap content-center;
+    }
+}

@@ -1,0 +1,126 @@
+.animatebounce {
+  animation: spin 1s 1;
+  @apply font-serif font-bold flex justify-center  items-center text-5xl sm:w-[75%] md:w-[85%] lg:w-[85%] lg:text-7xl pt-3 bg-gradient-to-r from-blue-400 to-white  text-transparent bg-clip-text;
+}
+
+.container {
+  @apply flex w-full justify-around p-4 lg:h-[500px] h-[550px] lg:py-16 md:py-20 bg-slate-900;
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.8995973389355743) 100%); */
+}
+.mainHeading {
+  @apply w-full  flex flex-col justify-center items-center;
+  
+}
+.signupButton{
+  @apply bg-amber-300 hover:bg-green-600 hover:text-white font-bold px-4 py-2 mr-[68%] mt-2 rounded-md
+}
+.imageContainer {
+  @apply w-full flex justify-end pr-20;
+}
+
+.lineContainer {
+  @apply w-full bg-black h-[1px] mt-3;
+}
+.secondContainer{
+  @apply flex justify-around items-center p-6 w-full h-full py-10;
+}
+.paragraphContainer{
+  @apply bg-slate-900 text-white w-[25%] h-full p-6 rounded-md hover:shadow-black hover:shadow-xl;
+}
+.paragraphContainerHeading{
+  @apply text-xl font-serif font-bold pb-4;
+}
+
+
+@media(max-width:1024px){
+  .secondContainer{
+    @apply flex  items-center justify-around
+  }
+  .paragraphContainer{
+    @apply w-[35%]
+  }
+}
+
+@media(max-width:820px) {
+  .container {
+    @apply flex flex-col;
+  }
+
+  .mainHeading {
+    @apply w-full flex items-center pl-12;
+  }
+
+  .imageContainer {
+    @apply flex justify-center p-0;
+  }
+  .secondContainer{
+    @apply flex flex-col items-center justify-center
+  }
+  .paragraphContainer{
+    @apply w-[80%]
+  }
+  .videoWrapper{
+    @apply mt-[9%]
+  }
+
+}
+
+@media(max-width:768px) {
+  .secondContainer{
+    @apply flex flex-col items-center justify-center
+  }
+  .paragraphContainer{
+    @apply w-[60%]
+  }
+  .videoWrapper{
+    @apply mt-[9%]
+  }
+}
+
+@media (max-width: 600px){
+  .secondContainer{
+    @apply flex flex-col items-center justify-evenly
+  }
+  .paragraphContainer{
+    @apply w-[85%]
+  }
+  .videoWrapper{
+    @apply mt-[9%]
+  }
+}
+
+
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes ping {
+
+  75%,
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
