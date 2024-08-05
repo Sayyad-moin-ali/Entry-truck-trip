@@ -1,8 +1,8 @@
 .container{
-    @apply pt-28 pb-10 flex justify-evenly items-center bg-slate-900 text-white;
+    @apply pt-28 pb-10 flex justify-evenly items-center  text-black;
 }
 .formInput{
-    @apply  mb-6 w-full rounded p-2 text-black;
+    @apply  mb-6 w-full rounded p-2 text-black text-lg border-2 border-black bg-slate-300;
 }
 .inputWrapper{
     @apply flex flex-col w-[40%];
@@ -14,7 +14,7 @@
     @apply pt-4 leading-7;
 }
 .submitButton{
-    @apply bg-amber-300 text-black hover:bg-green-600 hover:text-white p-2 rounded w-[40%] text-xl font-bold  transition-all;
+    @apply bg-amber-400 text-black hover:bg-green-600 hover:text-white p-2 rounded w-[40%] text-xl font-bold  transition-all;
 }
 .aboutAddressheading{
     @apply pt-4 leading-7 text-3xl font-serif;

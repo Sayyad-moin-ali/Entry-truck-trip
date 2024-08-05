@@ -18,7 +18,7 @@ const page = () => {
         {
           aboutHeading?.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
                 <h1 className={styles.aboutAddressheading}>{item.aboutAddressheading}</h1>
                 <p className={styles.description}>{item.aboutAddress}</p>
                 <p className={styles.description}>{item.aboutProducts}</p>

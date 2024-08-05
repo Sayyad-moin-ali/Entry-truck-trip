@@ -7,15 +7,15 @@ import Link from 'next/link'
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
     return (
-        <div className='bg-slate-500 w-full h-14 flex justify-between '>
-            <div className='flex  items-center lg:pl-12 pl-8 w-[30%]'>
-                <Image src='/logo.png' alt='logo image' width={70} height={50} />
+        <div className='bg-slate-700 w-full h-14 flex justify-between '>
+            <div className='flex  items-center lg:pl-10 pl-4'>
+                <Image src='/mainlogo.png' alt='logo image' className='rounded-full hover:shadow-black hover:shadow-xl' width={50} height={50} />
             </div>
             <div className='lg:flex hidden justify-end text-white w-[70%] md:w-[75%] items-center '>
                 {
                     navbardata.map((item, index) =>
                         <Link href={item.link} key={index}>
-                            <h2 className='hover:text-black hover:bg-white  rounded-md text-xl py-[4px] px-10 font-bold'>{item.heading}</h2>
+                            <h2 className='hover:text-black hover:bg-white  rounded-md text-xl outline-1 py-[4px] px-10 font-bold'>{item.heading}</h2>
                         </Link>
                     )
                 }

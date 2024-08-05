@@ -3,18 +3,18 @@ import Image from 'next/image'
 import { aboutHeading } from '../Data'
 import styles from './about.module.css'
 
-const AboutUs = () => {
+const page = () => {
   return (
     <div className={styles.container}>
 
       <div>
-        <Image className={styles.aboutUsimage} src="/naushad.jpeg" alt='Image' width={300} height={300}></Image>
+        <Image className={styles.aboutUsimage} src="/truck.jpg" alt='Image' width={300} height={300}></Image>
       </div>
 
       {
         aboutHeading?.map((item, index) => {
           return (
-            <div className={styles.description}>
+            <div key={index} className={styles.description}>
               <h1 className={styles.heading}>{item.aboutHeading}</h1>
               <p className={styles.aboutParagraph}>{item.aboutParagraph}</p>
               <p className={styles.aboutParagraph}>{item.aboutProducts}</p>
@@ -31,4 +31,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default page

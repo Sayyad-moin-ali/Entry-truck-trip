@@ -24,7 +24,8 @@ const Hero = () => {
                 {/* <Image src='/locationfromto.jpg' alt="location image" width={300} height={300} /> */}
                 <video className={styles.videoWrapper} src='/video.mp4' width={350} height={350} autoPlay loop muted></video>
             </div>
-            <div className={styles.lineContainer}></div>
+            {/* <div className={styles.lineContainer}></div> */}
+       
         </div>
 
     )

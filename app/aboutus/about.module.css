@@ -1,6 +1,6 @@
 
 .container{
-    @apply flex pt-28 pb-10 justify-evenly w-[100%]  items-center bg-slate-900 text-white;
+    @apply flex pt-20 pb-10 justify-evenly w-[100%]  items-center text-black;
 }
 .description{
     @apply  w-[50%];
@@ -55,7 +55,7 @@
 
 @media (max-width: 600px){
     .container{
-        @apply flex-col justify-center items-center pt-32;
+        @apply flex-col justify-center items-center pt-16;
     }
     .aboutUsimage{
         @apply w-80 h-[500px] pb-4;

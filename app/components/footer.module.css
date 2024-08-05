@@ -1,5 +1,5 @@
 .container {
-    @apply bg-slate-900 text-white w-[100%] h-[300px] flex justify-evenly mt-4 items-center content-center flex-wrap;
+    @apply bg-slate-700 text-white w-[100%] h-[300px] flex justify-evenly mt-4 items-center content-center flex-wrap;
 }
 .footerHeading{
     @apply font-bold text-2xl border-b-2 border-white pb-2;
@@ -13,6 +13,6 @@
 
 @media (max-width: 640px) {
     .container {
-        @apply flex-col flex justify-center items-start flex-wrap content-center;
+        @apply flex-col flex justify-center items-start flex-wrap content-start pl-[14%];
     }
 }

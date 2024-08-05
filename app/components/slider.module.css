@@ -1,0 +1,31 @@
+.container{
+    @apply flex flex-col mt-5 w-full h-[420px];
+}
+.headingWrapper{
+    @apply flex justify-center items-center;
+}
+.heading{
+    @apply  font-bold text-3xl text-slate-700 font-serif;
+}
+.sliderContainer{
+    @apply flex justify-center items-center mt-5;
+}
+.cardContainer{
+    @apply flex  justify-center items-center w-[80%] overflow-hidden  transition-transform duration-500 ease-in-out;
+    
+}
+.card{
+    @apply bg-slate-700  text-white rounded-md w-full sm:w-[30%] h-[300px] flex flex-col justify-evenly items-center mx-2;
+}
+.paragraph{
+    @apply w-[80%] text-lg;
+}
+.name{
+    @apply text-xl font-serif border-b-2 border-white
+}
+
+@media(max-width:820px) {
+    .card{
+        @apply w-[80%];
+    }
+}

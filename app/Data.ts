@@ -4,7 +4,7 @@ export const navbardata = [
         heading: "Home"
     },
     {
-        link: "/aboutus",
+        link: "/aboutUs",
         heading: "About Us"
     },
     {
@@ -34,4 +34,29 @@ export const footerData={
     connect:"Connect with us"
 }
 
-
+export const sliderData=[
+    {
+        paragraph:"It is good website and usefull",
+        name:"Pratik sahu"
+    },
+    {
+        paragraph:"with the help of this i can entry my trips form anywhere",
+        name:"Mukesh goyal"
+    },
+    {
+        paragraph:"This website made me paper free",
+        name:"Abid ali"
+    },
+    {
+        paragraph:"we can easily access how many trips did our truck runned",
+        name:"Rahul gupta"
+    },
+    {
+        paragraph:"It is usefull for truck owners with the help of this we can track how many trucks are running good and how much money our trip made we can access easily",
+        name:"Balideep singh"
+    },
+    {
+        paragraph:"It really made everything easy to manage",
+        name:"Prakit sahu"
+    }
+]
