@@ -10,6 +10,9 @@
 .socialMediawrapper{
     @apply flex gap-5;
 }
+.email{
+    @apply border-b-2 border-blue-800 text-blue-300; 
+}
 
 @media (max-width: 640px) {
     .container {

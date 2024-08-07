@@ -19,7 +19,8 @@ const Slider = () => {
 
   return (
 
-    <div className='flex justify-center items-center w-full h-full my-16'>
+    <div className='flex flex-col justify-center items-center w-full h-full my-16'>
+      <h1 className='text-3xl font-serif font-bold mb-5'>Our Testimonials</h1>
       <Carousel
         plugins={[Autoplay({ delay: 3000 })]}
         opts={{

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { aboutHeading } from '../Data'
+import { description } from '../Data'
 import styles from './about.module.css'
 
 const page = () => {
@@ -11,21 +11,15 @@ const page = () => {
         <Image className={styles.aboutUsimage} src="/truck.jpg" alt='Image' width={300} height={300}></Image>
       </div>
 
-      {
-        aboutHeading?.map((item, index) => {
-          return (
-            <div key={index} className={styles.description}>
-              <h1 className={styles.heading}>{item.aboutHeading}</h1>
-              <p className={styles.aboutParagraph}>{item.aboutParagraph}</p>
-              <p className={styles.aboutParagraph}>{item.aboutProducts}</p>
-              <h1 className={styles.aboutAddressheading}>{item.aboutAddressheading
-              }</h1>
-              <p className={styles.aboutParagraph}>{item.aboutAddress}</p>
+            <div  className={styles.description}>
+              <h1 className={styles.heading}>{description.aboutHeading}</h1>
+              <p className={styles.aboutParagraph}>{description.descriptionParagraph}</p>
 
-            </div>
-          )
-        })
-      }
+
+              <h1 className={styles.featureHeading}>{description.featureHeading}</h1>
+              <p className={styles.features}>{description.features}</p>
+
+            </div>      
 
     </div>
   )

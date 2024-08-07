@@ -58,7 +58,7 @@
     @apply flex flex-col items-center justify-center
   }
   .paragraphContainer{
-    @apply w-[80%]
+    @apply w-[85%]
   }
   .videoWrapper{
     @apply mt-[9%]

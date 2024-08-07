@@ -11,10 +11,10 @@
 .heading{
     @apply text-3xl font-serif;
 }
-.aboutParagraph{
+.features{
 @apply pt-4 leading-7 text-lg;
 }
-.aboutAddressheading{
+.featureHeading{
     @apply pt-4 leading-7 text-3xl font-serif;
 }
 

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { aboutHeading } from '../Data'
+import { contactData } from '../Data'
 import styles from './contact.module.css'
 import { useRef } from 'react'
 
@@ -15,17 +15,10 @@ const page = () => {
         <button type='submit' className={styles.submitButton}>Submit</button>
       </div>
       <div className={styles.contactDescription}>
-        {
-          aboutHeading?.map((item, index) => {
-            return (
-              <div key={index}>
-                <h1 className={styles.aboutAddressheading}>{item.aboutAddressheading}</h1>
-                <p className={styles.description}>{item.aboutAddress}</p>
-                <p className={styles.description}>{item.aboutProducts}</p>
-              </div>
-            )
-          })
-        }
+
+        <h1 className={styles.aboutAddressheading}>{contactData.contactHeading}</h1>
+        <p className={styles.description}>{contactData.contactParagraph}</p>
+
       </div>
     </div>
   )

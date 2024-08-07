@@ -1,0 +1,20 @@
+.descriptionContainer{
+    @apply w-full justify-center items-center flex-col flex px-28 h-full my-14;
+}
+.descriptionHeading{
+    @apply text-3xl w-full font-serif font-bold bg-slate-300 flex justify-center items-center py-4 rounded-md;
+}
+.descriptionParagraph{
+    @apply text-xl mt-4 leading-9 font-serif;
+}
+@media (max-width: 640px) {
+    .descriptionContainer{
+        @apply my-0  px-10;
+    }
+    .descriptionHeading{
+        @apply text-xl w-full px-11;
+    }
+    .descriptionParagraph{
+        @apply text-base leading-8;
+    }
+}
