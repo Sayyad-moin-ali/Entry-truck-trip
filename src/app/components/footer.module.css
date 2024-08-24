@@ -16,6 +16,6 @@
 
 @media (max-width: 640px) {
     .container {
-        @apply flex-col flex justify-center items-start flex-wrap content-start pl-[14%];
+        @apply flex-col flex-nowrap flex justify-center items-start content-start pl-[14%] h-[400px];
     }
 }
