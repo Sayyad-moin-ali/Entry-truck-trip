@@ -1,9 +1,12 @@
 import mongoose, { connection } from "mongoose";
+import dotenv from 'dotenv'
 
+
+dotenv.config(); 
 export async function connect() {
     try {
         mongoose.connect(process.env.MONGO_URL!)
-        const connnection = mongoose.connection
+        const connnection = mongoose.connection;
 
         connnection.on('connected',()=>{
             console.log("mongodbb connected")
