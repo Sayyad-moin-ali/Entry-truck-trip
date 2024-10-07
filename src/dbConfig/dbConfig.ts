@@ -5,10 +5,10 @@ import dotenv from 'dotenv'
 dotenv.config(); 
 export async function connect() {
     try {
-        mongoose.connect(process.env.MONGO_URL!)
-        const connnection = mongoose.connection;
+       await mongoose.connect(process.env.MONGO_URL!)
+        const connection = mongoose.connection;
 
-        connnection.on('connected',()=>{
+        connection.on('connected',()=>{
             console.log("mongodbb connected")
         })
         connection.on('error',(error)=>{
